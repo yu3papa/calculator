@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calc-divide
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: calc-divide
+  template:
+    metadata:
+      labels:
+        app: calc-divide
+    spec:
+      containers:
+        - image: yu3papa/calc-divide:1.0
+          name: main
+

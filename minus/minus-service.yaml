@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: calc-minus
+spec:
+  selector:
+    app: calc-minus
+  ports:
+    - port: 80
+      targetPort: 8080

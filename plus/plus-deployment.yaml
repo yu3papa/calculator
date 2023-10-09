@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calc-plus
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: calc-plus
+  template:
+    metadata:
+      labels:
+        app: calc-plus
+    spec:
+      containers:
+        - image: yu3papa/calc-plus:1.0
+          name: main
+

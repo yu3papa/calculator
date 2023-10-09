@@ -1,0 +1,22 @@
+input.btn {
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    font-size: 15pt;
+}
+
+.clr, .equal {
+    width: 112px;
+    height: 40px;
+    margin: 5px;
+    font-size: 15pt;
+}
+
+#disp {
+    width: 295px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid green;
+    font-size: 22pt;
+    text-align: right;
+}

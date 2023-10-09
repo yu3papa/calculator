@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: calc-multiply
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: calc-multiply
+  template:
+    metadata:
+      labels:
+        app: calc-multiply
+    spec:
+      containers:
+        - image: yu3papa/calc-multiply:1.0
+          name: main
+
